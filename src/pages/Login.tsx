@@ -41,7 +41,7 @@ export default function Login() {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white p-8 rounded-2xl shadow-lg border border-zinc-100">
+    <div className="max-w-md mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-zinc-100">
       <h2 className="text-3xl font-bold text-center mb-8 text-black">Login</h2>
       {error && <div className="bg-red-50 text-red-600 p-4 rounded-lg mb-6 text-sm">{error}</div>}
       <form onSubmit={handleSubmit} className="space-y-5">

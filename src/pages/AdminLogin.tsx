@@ -42,7 +42,7 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white p-8 rounded-2xl shadow-lg border border-zinc-100">
+    <div className="max-w-md mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-zinc-100">
       <div className="flex justify-center mb-6">
         <div className="bg-black p-4 rounded-full">
           <Shield className="text-amber-500" size={32} />

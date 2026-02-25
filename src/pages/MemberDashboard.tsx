@@ -95,41 +95,41 @@ export default function MemberDashboard() {
   return (
     <div className="flex flex-col md:flex-row gap-8">
       {/* Sidebar */}
-      <div className="w-full md:w-64 space-y-2">
+      <div className="w-full md:w-64 flex flex-row md:flex-col gap-2 overflow-x-auto pb-2 md:pb-0 hide-scrollbar">
         <button
           onClick={() => setActiveTab('dashboard')}
-          className={`w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'dashboard' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
+          className={`whitespace-nowrap flex-shrink-0 md:w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'dashboard' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
         >
           <CreditCard size={20} /> Dashboard
         </button>
         <button
           onClick={() => setActiveTab('card')}
-          className={`w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'card' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
+          className={`whitespace-nowrap flex-shrink-0 md:w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'card' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
         >
           <QrCodeIcon size={20} /> Kartu Member
         </button>
         <button
           onClick={() => setActiveTab('withdraw')}
-          className={`w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'withdraw' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
+          className={`whitespace-nowrap flex-shrink-0 md:w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'withdraw' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
         >
           <DollarSign size={20} /> Redeem Komisi
         </button>
         <button
           onClick={() => setActiveTab('history')}
-          className={`w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'history' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
+          className={`whitespace-nowrap flex-shrink-0 md:w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'history' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
         >
           <History size={20} /> Riwayat Redeem
         </button>
         <button
           onClick={() => setActiveTab('settings')}
-          className={`w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'settings' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
+          className={`whitespace-nowrap flex-shrink-0 md:w-full text-left px-4 py-3 rounded-xl font-medium flex items-center gap-3 transition-colors ${activeTab === 'settings' ? 'bg-black text-white' : 'hover:bg-zinc-100'}`}
         >
           <Settings size={20} /> Pengaturan
         </button>
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 bg-white p-8 rounded-2xl shadow-sm border border-zinc-100">
+      <div className="flex-1 bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-zinc-100">
         {message && (
           <div className="bg-amber-50 text-amber-800 p-4 rounded-xl mb-6 font-medium border border-amber-200">
             {message}

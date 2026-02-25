@@ -30,9 +30,9 @@ export default function CheckCommission() {
 
   return (
     <div className="max-w-xl mx-auto">
-      <div className="bg-white p-8 rounded-2xl shadow-lg border border-zinc-100 mb-8">
+      <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-zinc-100 mb-8">
         <h2 className="text-3xl font-bold text-center mb-8 text-black">Cek Komisi Member</h2>
-        <form onSubmit={handleSearch} className="flex gap-4">
+        <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-4">
           <input
             type="text"
             placeholder="Masukkan ID Member (contoh: DM20260001)"
@@ -58,7 +58,7 @@ export default function CheckCommission() {
       )}
 
       {result && (
-        <div className="bg-gradient-to-br from-black to-zinc-900 text-white p-8 rounded-2xl shadow-2xl relative overflow-hidden">
+        <div className="bg-gradient-to-br from-black to-zinc-900 text-white p-6 md:p-8 rounded-2xl shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl"></div>
           <div className="relative z-10">
             <div className="flex justify-between items-start mb-8">
