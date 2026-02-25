@@ -1,0 +1,7 @@
+{
+  "name": "DigitalMeera Member System",
+  "description": "Sistem Kartu Member DigitalMeera dengan fitur komisi, QR code, dan admin dashboard.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
